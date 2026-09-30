@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kenstore</title>
+  </head>
+  <body>
+    
+    <main>
+      <a href="#" data-view="cart" id="cart-link" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+      <div class="page-header">
+      <h1>Welcome to Kenstore</h1>
+      <p>Explore our products below:</p>
+    </div>
+      <div class="filter-controls">
+      <input type="search" id="search-input" placeholder="Search products here" aria-label="Search products"/>
+      <select id="filter-by" aria-label="Filter products">
+        <option value="asc">Price: low to high</option>
+        <option value="desc">Price: high to low</option>
+        <option value="rating">Rating</option>
+        <option value="discount">Discount</option>
+        <option value="in-stock">In Stock</option>
+      </select>
+      </div>
+      <h2 class="total-product-count">Showing 0 Products</h2>
+      <ul id="product-list">
+
+      </ul>
+       <div id="product-detail" hidden></div>
+       <div id="cart-page" hidden></div>
+       <div id="checkout-page" hidden></div>
+
+       <script type="module" src="/src/main.js"></script>
+    </main>
+  </body>
+</html>
